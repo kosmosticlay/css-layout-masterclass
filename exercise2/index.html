@@ -4,9 +4,80 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.scss" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Exercise 2</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="background">
+      <div class="background__left"></div>
+      <div class="background__right"></div>
+    </div>
+    <div class="phone">
+      <header class="header">
+        <div class="header__back">👈</div>
+        <div class="header__title">my cart</div>
+        <div class="header__cart">🛒</div>
+      </header>
+      <section class="total-cost">
+        <span class="total-cost__price">$3550</span>
+        <span class="total-cost__info">based on your 5 items</span>
+      </section>
+      <section class="products">
+        <article class="product">
+          <div class="product__title">
+            <span class="product__title-top">POP TEMPLE PRINT T-SHIRT</span>
+            <span class="product__title-bottom">versace limited 2021</span>
+          </div>
+          <div class="product__price">
+            <span class="product__price-total">$1990</span
+            ><span class="product_price-each">$995 per piece</span>
+          </div>
+          <div class="product__size">
+            <div class="product__details">
+              <span class="product__details-classification">size</span>
+              <span class="product__details-value">48-L</span>
+            </div>
+            <div class="product__arrow">⬇️</div>
+          </div>
+          <div class="product__empty"></div>
+          <div class="product__quantity">
+            <div class="product__details">
+              <span class="product__details-classification">qt</span>
+              <span class="product__details-value">2 pcs</span>
+            </div>
+            <div class="product__arrow">⬇️</div>
+          </div>
+          <div class="product__image"></div>
+          <div class="product__border"></div>
+        </article>
+        <article class="product">
+          <div class="product__title">
+            <span class="product__title-top">chain reaction trainers</span>
+            <span class="product__title-bottom">versace limited 2021</span>
+          </div>
+          <div class="product__price">
+            <span class="product__price-total">$850</span
+            ><span class="product_price-each">$850 per piece</span>
+          </div>
+          <div class="product__size">
+            <div class="product__details">
+              <span class="product__details-classification">size</span>
+              <span class="product__details-value">45</span>
+            </div>
+            <div class="product__arrow">⬇️</div>
+          </div>
+          <div class="product__empty"></div>
+          <div class="product__quantity">
+            <div class="product__details">
+              <span class="product__details-classification">qt</span>
+              <span class="product__details-value">1 pcs</span>
+            </div>
+            <div class="product__arrow">⬇️</div>
+          </div>
+          <div class="product__image"></div>
+          <div class="product__border"></div>
+        </article>
+      </section>
+    </div>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
