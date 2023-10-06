@@ -1,6 +1,6 @@
 ## ✅ Exercise3 Result
 
-![alt result3](/exercise3/result3.png) <br/>
+![alt result3](/exercise3/result3.png)
 
 ## ✅ Study Review
 
@@ -10,3 +10,8 @@
   `grid-template-columns: repeat(4, 1fr) 1.5fr repeat(6, 1fr);`
 
 - 여러 개의 요소로 이루어진 block은 `<ul>` / `<li>` 태그 사용 권장
+
+## ✅ References
+
+- HAAN sanitizers products pages @Olesya Mikhaylina <br/>
+  https://dribbble.com/shots/17000165-HAAN-sanitizers-products-pages/attachments/12079703?mode=media
