@@ -6,11 +6,10 @@
 
 - 공부한 속성 리스트
 
-  - `text-shadow: offset-x offset-y blur-radius color` <br/>
-    : 글자에 그림자 효과를 주는 속성
+  - `text-shadow: offset-x offset-y blur-radius color` : 글자에 그림자 효과를 주는 속성
 
-    - text-shadow를 여러 번 사용하여 글자 테두리 구현 가능
-      `text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;`
+    - text-shadow를 여러 번 사용하여 글자 테두리 구현 가능 <br/>
+      `text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;` <br/>
       (1px은 외곽선이 자연스럽지만, 그 이상은 울퉁불퉁하게 구현된다.)
 
   - align-items / align-content / align-self 비교
