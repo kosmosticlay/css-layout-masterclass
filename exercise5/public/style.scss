@@ -1,0 +1,108 @@
+@import "./reset.scss";
+@import "./variables.scss";
+
+.body-wrap {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr 50px;
+  & > div:not(.main-wrap) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    &:nth-child(1),
+    &:nth-child(5) {
+      grid-column: 1 / span 3;
+    }
+    &:nth-child(2) > span {
+      transform: rotate(-90deg);
+    }
+    &:nth-child(4) > span {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.main-wrap {
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main-wrap__menu-lists {
+  width: 100%;
+  height: 280px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  .menu-list {
+    width: 100%;
+    border-bottom: 3px solid black;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main-wrap__contents {
+  height: calc(100% - 280px);
+  .contents__header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    .contents__header-navList {
+      width: 300px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(169, 169, 169);
+      & > li:nth-child(2) {
+        color: black;
+      }
+    }
+  }
+  .contents__gallery {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow-y: scroll;
+    .gallery__item {
+      width: 100%;
+      height: 300px;
+      & > img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      & > span {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        line-height: 1.3;
+      }
+    }
+  }
+}
