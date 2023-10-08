@@ -224,7 +224,6 @@ body {
 }
 
 .occupancy {
-  background-color: cadetblue;
   grid-row: 1 / span 4;
   display: grid;
   grid-template-rows: 1.5fr 0.8fr 1fr 1.8fr 2.3fr;
@@ -240,7 +239,7 @@ body {
       }
     }
     &:first-child {
-      background-color: white;
+      background-color: $main_gray;
       color: $gray_dark;
       padding: 30px 20px;
       box-sizing: border-box;
@@ -268,7 +267,7 @@ body {
   }
 }
 .config {
-  background-color: beige;
+  background-color: $main_gray;
   grid-row: 3 / span 2;
   padding: 40px 80px;
   & > div {
