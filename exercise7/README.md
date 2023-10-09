@@ -10,8 +10,8 @@
   |%|부모 요소에 대한 상대 크기|
   |vh|View Height <br/> 현재 실행 중인 스크린 크기에 대한 상대적인 세로 길이|
   |vw|View Width <br/> 현재 실행 중인 스크린 크기에 대한 상대적인 가로 길이|
-  |em|부모로부터 상속받은 or 자신의 `font-size` 속성값에 대한 상대 크기<br/> <img src="/exercise7/images/em-example.png">|
-  |rem|최상위 요소의 `font-size` 속성값에 대한 상대 크기<br/> <img src="/exercise7/images/rem-example.png">|
+  |em|부모로부터 상속받은 or 자신의 `font-size` 속성값에 대한 상대 크기
+  |rem|최상위 요소의 `font-size` 속성값에 대한 상대 크기
   |pt|1px = 0.75pt (일반문서에서 주로 사용)|
 
 📌 `.side-bar`안의 `span`이 정상적으로 구현되지 않는 문제
@@ -23,6 +23,10 @@
 
   - 문제 2. `span`요소에 `white-space: nowrap;`으로 자동 줄바꿈되는 것을 막을 경우, `.side-bar`이 차지하는 그리드의 넓이가 증가한다. <br/>
     <img src="/exercise7/images/rotate-error2" width="700" height="400">
+
+- 문제 해결
+  - `span`의 width를 변경하면 부모 요소인 `.side-bar`에도 적용이 되는 것을 확인하였다.
+  - 따라서 `span`을 `position: absolute`로 부모 요소로부터 분리시킨 후, width값을 `px`단위로 설정하였다.
 
 ## ✅ References
 
