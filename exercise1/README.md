@@ -13,7 +13,7 @@
   - `auto-fit` : 셀의 수가 초기 설정보다 모자라면, 빈 자리는 나머지 셀이 차지 <br/>
     `grid-template-columns: repeat(auto-fill, minmax(20%, auto))`
 
-## ✅ References.
+## ✅ References
 
 - Education Courses App @Andrew Sereda <br/>
   https://dribbble.com/shots/19526780-Education-Courses-App
